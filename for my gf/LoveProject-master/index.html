@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" text="text/html; charset=utf-8" />
+<title>This one is for my Varchhu</title>
+
+<style type="text/css">
+@font-face {
+    font-family: digit;
+    src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+    <div id="content">
+        <div id="code">
+            <span style="font-size: 22px; font-weight: bold;">My life was black and white before and I met you, you are the color</span><br/><br/>
+
+            hi love happy monthsary to us. I did this when we had argu last June 30, 2025, sorry i lied to u on that day na wala akong ginawa, pero ito talaga yung purpose ko nun kaya I cancelled my plans non because of this, and about my plan? marami pa namang time, pwede naman after our monthsary natin diva? hahaha<br/><br/>
+
+            first of all, thank you for coming into my monochrome world and for actually bringing color to it. Yes, it actually a gray before you came, sa nakalipas na panahon gabi-gabi akong tumitingin sa taas na sana makaramdam ulit ako ng saya, na sana makaramdam ulit ako ng iyan, na sana maranasan ko ulit tumulo ang mga luha ko. And finally yun ang pinaramdam mo sa'kin-- the cry with a tears of joy habang sinusulat ko sa'yo ito dahil sa sobrang saya ng puso ko.<br/><br/>
+
+            and if you are confuse why I am asking your tg username kasi balak ko dun i-send para may schedule hahahhs, para rin hindi ko makalimutan because of my work😭😭😭.<br/><br/>
+
+            Again, happy monthsary to my pretty little cutie baby!!
+        </div>
+
+        <div id="loveHeart">
+            <canvas id="garden"></canvas>
+            <div id="words">
+                <div id="messages">
+                    HAPPY MONTHSARY!!! 
+                    <div id="elapseClock"></div>
+                </div>
+                <div id="loveu">
+                    I LOVE YOU SO MUCH<br/>
+                    <div class="signature">- YEL</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+
+// Start date: June 2, 2025 at 00:00:00
+var together = new Date();
+together.setFullYear(2025, 5, 2);   // Month 5 = June
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+    var msg = document.createElement("div");
+    msg.id = "errorMsg";
+    msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+    document.body.appendChild(msg);
+    $("#code").css("display", "none")
+    $("#copyright").css("position", "absolute");
+    $("#copyright").css("bottom", "10px");
+    document.execCommand("stop");
+} else {
+    setTimeout(function () {
+        startHeartAnimation();
+    }, 5000);
+
+    timeElapse(together);
+    setInterval(function () {
+        timeElapse(together);
+    }, 500);
+
+    adjustCodePosition();
+    $("#code").typewriter();
+}
+</script>
+
+</body>
+</html>
